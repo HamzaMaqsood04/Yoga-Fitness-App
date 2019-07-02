@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListExercises">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="NAME OF EXERCISE"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/detail_image"
+        android:src="@drawable/boat_pose"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="200dp" />
+
+
+    <info.hoang8f.widget.FButton
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/btnStart"
+        android:text="Lets Go!!!"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fButtonColor="@color/colorPrimary"
+        app:shadowColor="@color/colorPrimaryDark"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp"
+
+        />
+
+    <TextView
+        android:id="@+id/timer"
+        android:text="20"
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
